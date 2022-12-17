@@ -5,33 +5,25 @@ using System;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Builder.TraceExtensions;
-using Microsoft.Bot.Connector.Authentication;
-using Microsoft.Bot.Schema;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplication1
+namespace Microsoft.BotBuilderSamples
 {
-    public class AdapterWithErrorHandler : CloudAdapter
+    public class AdapterWithErrorHandler : BotFrameworkHttpAdapter
     {
-        public AdapterWithErrorHandler(BotFrameworkAuthentication auth, ILogger<IBotFrameworkHttpAdapter> logger, ConversationState conversationState = default)
-            : base(auth, logger)
+        public AdapterWithErrorHandler(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger, ConversationState conversationState = null)
+            : base(configuration, logger)
         {
             OnTurnError = async (turnContext, exception) =>
             {
                 // Log any leaked exception from the application.
-                // NOTE: In production environment, you should consider logging this to
-                // Azure Application Insights. Visit https://aka.ms/bottelemetry to see how
-                // to add telemetry capture to your bot.
                 logger.LogError(exception, $"[OnTurnError] unhandled error : {exception.Message}");
 
                 // Send a message to the user
-                var errorMessageText = "The bot encountered an error or bug.";
-                var errorMessage = MessageFactory.Text(errorMessageText, errorMessageText, InputHints.IgnoringInput);
-                await turnContext.SendActivityAsync(errorMessage);
-
-                errorMessageText = "To continue to run this bot, please fix the bot source code.";
-                errorMessage = MessageFactory.Text(errorMessageText, errorMessageText, InputHints.ExpectingInput);
-                await turnContext.SendActivityAsync(errorMessage);
+                await turnContext.SendActivityAsync("The bot encountered an error or bug.");
+                await turnContext.SendActivityAsync("To run this sample make sure you have the LUIS and QnA models deployed.");
+                await turnContext.SendActivityAsync("To continue to run this bot, please fix the bot source code.");
 
                 if (conversationState != null)
                 {
