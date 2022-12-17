@@ -1,0 +1,60 @@
+
+> LUIS application information
+> !# @app.name = HRChildBot
+> !# @app.desc = HR bot
+> !# @app.versionId = 0.1
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 7.0.0
+> !# @app.tokenizerVersion = 1.0.0
+
+
+> # Intent definitions
+
+# HRBot.getAvailableOpening
+- is there any open position for developers
+- what all positions can i apply in your company as a developer
+- what are current opening
+- which are the open positions for developers
+
+
+# HRBot.getHRManager
+- contact person for salary related queries
+- hr manager name
+- name of the hr person
+- who is the hr manager
+- whom to connect for hike
+- whom to connect for performance bonus
+- whom to connect for role change
+- whom to connect for salary arrears
+- whom to contact for hr queries
+
+
+# HRBot.getNoticePeriodDuration
+- how long should i serve in notice period
+- how long to serve in the company after putting paper
+- is there any mandatory duration to be served while in notice period
+- number of days to serve in notice period
+- what is the notice period duration
+
+
+# None
+
+
+> # Entity definitions
+
+
+> # PREBUILT Entity definitions
+
+@ prebuilt datetimeV2 hasRoles Duration,Time
+
+@ prebuilt ordinal
+
+
+> # Phrase list definitions
+
+
+> # List entities
+
+> # RegEx entities
+
+
