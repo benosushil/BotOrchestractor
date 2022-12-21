@@ -1,20 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33027.164
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nlp-with-entities", "nlp-with-entities\nlp-with-entities.csproj", "{358C06D7-E6DD-4178-BCF4-86548B0919A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildBotDetector", "ChildBotDetector\ChildBotDetector.csproj", "{ABA0F718-5E71-4BF6-BDFD-E196183E386A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Debug|Any CPU.Build.0 = Debug|x64
 		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Debug|x64.ActiveCfg = Debug|x64
 		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Debug|x64.Build.0 = Debug|x64
+		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Release|Any CPU.ActiveCfg = Release|x64
+		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Release|Any CPU.Build.0 = Release|x64
 		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Release|x64.ActiveCfg = Release|x64
 		{358C06D7-E6DD-4178-BCF4-86548B0919A4}.Release|x64.Build.0 = Release|x64
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Debug|x64.Build.0 = Debug|Any CPU
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Release|x64.ActiveCfg = Release|Any CPU
+		{ABA0F718-5E71-4BF6-BDFD-E196183E386A}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
