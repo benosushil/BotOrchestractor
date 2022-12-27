@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nlp-with-entities", "nlp-with-entities\nlp-with-entities.csproj", "{358C06D7-E6DD-4178-BCF4-86548B0919A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orchestrator.Site", "nlp-with-entities\Orchestrator.Site.csproj", "{358C06D7-E6DD-4178-BCF4-86548B0919A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildBotDetector", "ChildBotDetector\ChildBotDetector.csproj", "{ABA0F718-5E71-4BF6-BDFD-E196183E386A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChildBotDetector", "ChildBotDetector\ChildBotDetector.csproj", "{ABA0F718-5E71-4BF6-BDFD-E196183E386A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

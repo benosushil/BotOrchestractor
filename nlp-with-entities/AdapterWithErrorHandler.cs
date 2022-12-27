@@ -8,7 +8,7 @@ using Microsoft.Bot.Builder.TraceExtensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Microsoft.BotBuilderSamples
+namespace Orchestrator.Site
 {
     public class AdapterWithErrorHandler : BotFrameworkHttpAdapter
     {

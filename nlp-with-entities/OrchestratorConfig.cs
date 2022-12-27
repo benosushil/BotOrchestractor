@@ -1,4 +1,4 @@
-﻿namespace Microsoft.BotBuilderSamples
+﻿namespace Orchestrator.Site
 {
     public class OrchestratorConfig
     {

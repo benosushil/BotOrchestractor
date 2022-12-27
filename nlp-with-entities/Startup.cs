@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace Microsoft.BotBuilderSamples
+namespace Orchestrator.Site
 {
     public class Startup
     {

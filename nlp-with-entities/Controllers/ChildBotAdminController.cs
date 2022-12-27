@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Microsoft.BotBuilderSamples
+namespace Orchestrator.Site
 {
     [Route("api/childbotadmin")]
     [ApiController]
