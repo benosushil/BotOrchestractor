@@ -1,6 +1,5 @@
 ﻿using System.IO;
-using ChildBotDetector.Repoistory;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder; 
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Bot.Builder;
@@ -44,8 +43,6 @@ namespace Orchestrator.Site
 
             // Create the bot as a transient.
             services.AddTransient<IBot, DispatchBot>();
-
-            services.AddSingleton<IRepoistory, MonogoRepoistory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
